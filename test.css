@@ -1,14 +1,19 @@
 
 body {
-  margin: 0;
+	margin: 0;
 	padding: 0;
 	background: #FFFFFF;
 	font-family: "DINPro-Light", "Helvetica Neue Light", Helvatica, Arial, sans-serif;
 }
+/* In order to add din-pro, 
+we have to keep the font file 
+in the font folder. */
+
 #container {
 	width: 960px;
 	margin: 0 auto;
 }
+
 #logo { 
 	margin: 0px 5px;
 	background: #FFF;
