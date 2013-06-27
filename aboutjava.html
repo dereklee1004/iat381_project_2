@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<title>I.D Tattoo Artisan</title>
+	 
+	<link rel="stylesheet" type="text/css" href="CSS/style.css" />
+	<!-- <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+	<script type="text/javascript" src="JavaScript/twitterfeed.js"></script> -->
+	
+	<link rel="shortcut icon" href="http://www.sfu.ca/~donglid/iat381/project_2/images/icon.png"> <!-- This is the icon on the browser tab -->
+</head>
+
+<body>
+	<div id="container">
+	
+		<div id="logo">
+			<a href="home.html">
+			<img src="images/I.D_logo.png" width="540" height="85" alt="I.D logo" />
+			</a>
+		</div>
+		
+		<div id="openhour"> <!-- The office hour on the right hand side -->
+			<ul>
+				<li>MON-FRI &nbsp; &nbsp; 11:00-22:00</li>
+				<li>SAT-SUN &nbsp; &nbsp; 11:00-20:00</li>
+			</ul>
+		</div>
+		
+		<div id="navigation">
+			<ul> <!-- style="color: red;" -->
+				<li><a href="about.html" class="navigationButton" style="color: red;">About</a></li>
+				<li><img src="images/divider.png" width="2" height="15" alt="divider.png"/></li>
+				<li><a href="artist.html" class="navigationButton">Artist</a></li>
+				<li><img src="images/divider.png" width="2" height="15" alt="divider.png"/></li>
+				<li><a href="shop_aftercare.html" class="navigationButton">Shop</a></li>
+				<li><img src="images/divider.png" width="2" height="15" alt="divider.png"/></li>
+				<li><a href="news.html" class="navigationButton" >News</a></li>
+				<li><img src="images/divider.png" width="2" height="15" alt="divider.png"/></li>
+				<li><a href="contact.html" class="navigationButton">Contact</a></li>
+				<li><img src="images/divider.png" width="2" height="15" alt="divider.png"/></li>
+				<li><a href="policy.html" class="navigationButton">Policy</a></li>
+			</ul>
+		</div>
+		
+		<div id="optionbar"> <!-- The name bar with names -->
+			
+		</div> <!-- option bar end -->
+		
+		
+		<div id="subcontainer"> <!-- width 960 -->
+			<div id="thumbnail_list">   <!-- mainly we change this part -->
+				<div id = "myScreen">
+					<div id ="wrap">
+						<img src="slideshow/thumbnail-7.jpg" width="500" height="500" alt="image 1" class="is-showing"/>
+						<img src="slideshow/thumbnail-8.jpg" width="500" height="500" alt="image 2" />
+						<img src="slideshow/thumbnail-9.jpg" width="500" height="500" alt="image 3" />
+					</div>
+				</div>
+			</div>  <!-- thumbnaillist end here -->
+			
+			<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+			<script type="text/javascript">
+			
+				$(document).ready(function(){
+  					slideShow();
+				});
+
+				function slideShow() {
+  
+  					var showing = $('#wrap .is-showing');
+  					var next = showing.next().length ? showing.next() : showing.parent().children(':first');
+  
+  					showing.fadeOut(800, function() { next.fadeIn(800).addClass('is-showing'); }).removeClass('is-showing');
+  
+  					setTimeout(slideShow, 5000);
+					
+					}
+
+
+			</script>
+			<div id="twitter-feed">  <!--  http://www.queness.com/post/8567/create-a-dead-simple-twitter-feed-with-jquery -->
+			<a class="twitter-timeline" href="https://twitter.com/craigdong" data-widget-id="349118259972431872">Tweets by @craigdong</a>
+			<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+			</div>  
+		</div>   <!-- subcontainer div close here -->
+		<div id="footer">
+			<div id="footer_bar">
+			</div>
+	
+		
+			<div id="copyrights">
+				<span>&copy; I.D TATTOO ARTISIAN 2013 | ALL RIGHTS RESERVED</span>
+			</div>
+		
+			<div id="facebook_google">
+				<a href="https://plus.google.com/"><img src="images/google.png" width="20" alt="Google Plus" /></a>
+				<a href="https://www.facebook.com/"><img src="images/facebook.png" width="20" alt="Facebook" /></a>
+			</div>
+		</div>  <!-- footer ends here -->
+	</div> <!-- container end here! -->
+		
+</body>
+</html>
