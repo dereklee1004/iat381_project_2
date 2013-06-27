@@ -1,0 +1,447 @@
+@font-face {
+    font-family: 'DINProRegular';
+    src: url('../font/dinpro-regular.eot');
+    src: url('../font/dinpro-regular.eot') format('embedded-opentype'),
+         url('../font/dinpro-regular.woff') format('woff'),
+         url('../font/dinpro-regular.ttf') format('truetype'),
+         url('../font/dinpro-regular.svg#DINProRegular') format('svg');
+}
+/* This might be contain problems. */
+
+/* Styles */
+body {
+  margin: 50px 0px 50px;
+	padding: 0;
+	background: #FFFFFF;
+	font-family: 'DINProRegular'
+	
+}
+/* In order to add din-pro,
+we have to keep the font file
+in the font folder. */
+
+#container {
+	width: 960px;
+	margin: 0 auto;
+	/* border: solid 1px; */
+}
+
+#logo { 
+	margin: 0px 0px 10px 0px;
+	height: 80px;
+	width: 10px;
+	/*background: #FFFFFF;*/
+	/*position: absolute; */
+	border: 10px;  /* for IE the border around logo */
+	filter:chroma(color=#000000);
+}
+
+#openhour {
+	float: right;
+	/*position: absolute;*/
+	/* margin: 0px 5px; */
+	/*top: 80px;*/
+	/*right: 128px;*/
+	/*text-align: right;*/	
+} 
+
+
+#openhour ul {
+		margin-top: -43px;
+		display: block;
+		list-style: none;
+		/*margin: 0px;*/
+}
+
+
+#navigation {
+	/* float: left; */
+	height: 27px;
+	background: #000000;
+	font-size: 20px;
+	/* margin: 0px; */
+	
+}
+
+#navigation ul  {
+		margin: 0px;
+		margin-left: -25px;
+}
+
+#navigation ul li {
+		display: inline;
+		list-style: none;
+		margin-right: 15px;
+}
+
+
+
+#navigation a.navigationButton {
+	text-align: left;
+	background-color: black;
+	color: white;
+	border-color: black;
+	text-decoration: none;
+	padding: 0px;
+	border: none;/* solid 1px black */
+	/* box-shadow: 5px 5px 2px black; */
+	-moz-transition:background-color, color 0.1s;
+    -webkit-transition:background-color, color 0.1s;
+    -o-transition:background-color, color 0.1s;
+    transition:background-color, color 0.1s;
+}
+
+#navigation a.navigationButton:hover {
+	background-color: black;
+	color: #aa0202;
+	-moz-transition:background-color, color 0.5s;
+    -webkit-transition:background-color, color 0.5s;
+    -o-transition:background-color, color 0.5s;
+    transition:background-color, color 0.5s;
+}
+
+#optionbar {
+		/*float: right;*/
+		/*width: 960px;*/
+		height: 19px;
+		background: #D2D3D4;
+		/*position: absolute;*/
+		/*top: 220px;*/
+		margin: 5px 0px 0px 0px;
+		font-size: 13px;
+}
+#optionbar ul  {
+		margin: 0px;
+		margin-left: -25px;
+}
+
+#optionbar ul li {
+		display: inline;
+		list-style: none;
+		margin-right: 30px;
+}
+
+
+#optionbar a, a:visited {
+		text-decoration: none;
+		color: #000000;
+}
+
+
+#optionbar a.optionButton  { 
+	text-align: left;
+	background-color: #D2D3D4;
+	color: black;
+	border-color: black;
+	text-decoration: none;
+	padding: 0px;
+	border: none;/* solid 1px black */
+	-moz-transition:background-color, color 0.5s;
+    -webkit-transition:background-color, color 0.5s;
+    -o-transition:background-color, color 0.5s;
+    transition:background-color, color 0.5s;
+}
+
+#optionbar a.optionButton:hover {
+
+	background-color: #D2D3D4;
+	color: #aa0202;
+	/* font-weight:bold; */  /* make the text in bold but it not works good. */
+	
+	-moz-transition:background-color, color 0.5s;
+    -webkit-transition:background-color, color 0.5s;
+    -o-transition:background-color, color 0.5s;
+    transition:background-color, color 0.5s;
+}
+
+
+#subcontainer  {
+		/* border: solid 1px; */
+		width:960px;
+		height:400px;		
+}
+
+
+/* Image slide show starts in here. */
+
+#thumbnail_list  {
+		margin: 5px 0px 5px -5px;
+		float: left;
+		/* top: 300px; */
+		width: 750px;
+		height: 395px;
+		overflow-x:visible;
+		overflow-y:scroll;
+		/* border:solid 1px; */
+}
+
+#product_container {
+		width: 152px;
+		height: 199 px;
+		float: left;
+		margin: 0px 5px;
+
+}
+
+#thumbnail ul li{		/* Square boarder around image */
+	width: 152;
+	height: 152px;
+	border: solid;
+	border-width: 1px;
+}
+
+#thumbnail_list ul {    /* This is the style for the description of thumbnails */		
+		display: block;
+		margin:0px;
+		margin-left: -40px;
+		list-style:none;
+}
+
+#description ul li{
+	font-size: 10px;
+	list-style: none;
+	
+}
+
+#add_to_cart ul li{
+	height:17px;
+	width: 100px;
+	list-style: none;
+	float:left;
+	
+}
+
+#price ul li{
+	list-style: none;
+	float:right;
+	
+}
+
+#main_photo  {
+	margin: 0px 0px 5px 5px;
+	width: 220px;
+	float: left;
+}
+
+#id_artisan {
+	width: 500px;
+	margin: 50px 0px 0px 0px;
+	font-size: 15px;
+	float: left;
+	/* border:solid 1px; */
+}
+#artisan_name  {
+	width: 500px;
+	margin: -10px 0px 0px -5px;
+	font-size: 48px;
+	float: left; 
+	/* border:solid 1px; */
+}
+#about_me  {
+	width: 500px;
+	margin: 15px 0px 0px 0px;
+	font-size: 15px;
+	float: left; 
+	/* border:solid 1px; */
+}
+#artisan_description  {
+	width: 500px;
+	margin: -15px 0px 0px 0px;
+	font-size: 15px;
+	float: left; 
+	/* border:solid 1px; */
+}
+#gallery  {
+	/* border:solid 1px; */
+	margin: 0px 0px 0px 5px;
+	float: left;
+}
+#gallery ul li {
+	display:inline;
+	margin: 10px 10px 10px 0px;
+	
+}
+
+#about_us{
+	width: 500px;
+	margin: 30px 0px 0px 5px;
+	font-size: 48px;
+	float: left; 
+	/* border:solid 1px; */
+}
+#about_us_description  {
+	width: 390px;
+	margin: 10px 0px 0px 5px;
+	font-size: 15px;
+	float: left; 
+	/* border:solid 1px; */
+}
+
+#about_us_location  {
+	margin: 10px 0px 0px 5px;
+	width: 320px;
+	float: right;
+} 
+
+#news_list{
+	width: 720px;
+
+	margin: 15px 0px 0px 5px;
+	border-bottom:dashed 1px;
+}
+
+
+
+#contact_list  {
+	width: 720px;
+	height: 180px;
+	margin: 15px 0px 0px 5px;
+	/* border: solid 1px;
+	border-bottom:dashed 1px; */
+}
+
+#contact_location_pic  {
+	float: left;
+	margin: 0 15px 15px 0;
+}
+#contact_info  {
+	float: left;
+	margin: 20px 15px 15px 0px;
+}
+#contact_info ul li {
+	margin: 5px;
+}
+
+#policy_list  {
+	margin: 15px 0px 0px 5px;
+	
+}
+#policy_name ul li {
+	margin: 0px 0px 50px 0px;
+	border-bottom: dashed 1px;
+}
+
+
+
+
+/* The following is the CSS for twitter */
+#twitter-feed {
+    width:210px;
+    height:395px;
+    margin:0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-right:0px;
+    padding:0px;
+    border-radius:12px;
+    background-color:#FFF;
+    color:#333;
+    overflow:auto;
+	float:right;
+	/* border:solid; */
+}
+#twitter-feed h1 {
+    color:#5F5F5F;
+    margin:0px;
+    padding:9px 0px 9px 0px;
+    font-size:18px;
+    font-weight:lighter;
+}
+.twitter-article, #loading-container {
+    width:180px;
+    border-top:1px dotted #CCC;
+    float:left;
+    padding:8px 0px 8px 0px;
+}
+#loading-container {
+    padding:16px 0px 16px 0px;
+    text-align:center;
+}
+.twitter-pic {
+    float:left;
+}
+ 
+.twitter-pic img {
+    float:left;
+    border-radius:7px;
+    border:none;
+ 
+}
+ img  {
+     border:none;
+ }
+.twitter-text p {
+    margin:0px;
+    line-height:15px;
+}
+.twitter-text a,  h1 a {
+    color: #00acee;
+    text-decoration: none;
+}
+.twitter-text a:hover,  h1 a:hover {
+    text-decoration: underline;
+    color: #00acee;
+}
+ 
+.twitter-text {
+    width:180px;
+    float:left;
+    font-size:11px;
+    padding-left: 11px;
+}
+ 
+.tweet-time {
+    font-size:10px;
+    color:#878787;
+    float:right;
+}
+.tweet-time a, .tweet-time a:hover {
+    color:#878787;
+}
+.tweetprofilelink a {
+    color:#444;
+}
+.tweetprofilelink a:hover {
+    color:#444;
+}
+.backlink {
+    font-size:11px;
+    text-align:center;
+}
+ 
+.backlink a {
+    color:#aaa;
+}
+
+
+/* Footer bar */
+#footer_bar  {
+	/*position: absolute;*/
+	/*float: right;*/
+	/*width: 960px;*/
+	height: 27px;
+	background: #000000;
+	/*position: absolute;*/
+	/*top: 650px;*/
+	/*margin: 0px 5px 0px 5px;*/
+	/*font-size: 20px;*/
+}
+
+#copyrights {
+		margin-top: 5px;
+		height: 28px;
+		width: 500px;
+		font-size: 12px;
+		float: left;
+}
+
+#facebook_google{
+	margin-top: 5px;
+	float: right;
+}
+
+#myScreen {
+	width:500px;
+	height:395px;
+	margin-left:5px;
+}
+	
